@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import logo from '../Netflix-images/logo.png'
 import Image from 'next/dist/client/image'
-import styles from './Homenavbar.module.css'
+import styles from './HomeNavbar.module.css'
 import children from '../Netflix-images/children.png'
 import { useRouter } from 'next/router'
 import { useAuth } from '../Auth/AuthContext'
