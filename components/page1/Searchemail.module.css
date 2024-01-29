@@ -1,0 +1,45 @@
+.outermost {
+    display: flex;
+    justify-content: center;
+}
+
+.err {
+    color: rgb(255, 30, 30);
+}
+
+
+.inner {
+    display: flex;
+    /* background-color: aqua; */
+    /* width: fit-content; */
+    justify-content: center;
+    margin: 20px 0px 5px 0px;
+}
+
+.inner input {
+    font-size: 15px;
+    width: 400px;
+    height: 60px;
+    background-color: inherit;
+    margin-right: 8px;
+    padding: 25px;
+    border: 2px solid rgb(116, 110, 110);
+    border-radius: 5px;
+    color: white;
+
+}
+
+.inner input::placeholder {
+    color: rgb(189, 180, 180);
+}
+
+
+.inner button {
+    background-color: #E50914;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    cursor: pointer;
+}

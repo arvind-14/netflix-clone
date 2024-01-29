@@ -1,0 +1,27 @@
+.outer {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0px; */
+    align-items: center;
+    /* padding:0px 20px; */
+    width: 100%;
+}
+
+.left {
+    width: 180px;
+    margin: 20px 40px;
+}
+
+.right button {
+    margin: 20px 40px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.right button:hover {
+    text-decoration: underline;
+}
