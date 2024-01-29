@@ -42,20 +42,20 @@ const signin = () => {
                 alert('Signin Successful')
                 router.push('/')
             }
-            
+
             if (res == 'FirebaseError: Firebase: Error (auth/invalid-email).') {
-               
+
                 setemailerr('Invalid Email')
             }
             if (res == 'FirebaseError: Firebase: Error (auth/missing-password).') {
-               
+
                 setpasswderr('Password required')
             }
             if (res == 'FirebaseError: Firebase: Error (auth/invalid-login-credentials).') {
-               
+
                 setpasswderr('Wrong Password')
             }
-            
+
             // console.log(res)
         }).catch((err) => {
             console.log(err)
@@ -66,7 +66,9 @@ const signin = () => {
     return (
         <div className={styles.outer}>
             <div className={styles.content}>
-                <Navlogo />
+                <div className={styles.navlogo}>
+                    <Navlogo />
+                </div>
                 <div className={styles.container}>
                     <div className={styles.form}>
                         <form>
@@ -81,7 +83,7 @@ const signin = () => {
                                 setpassword(e.target.value)
                                 setpasswderr('')
                             }} />
-                            
+
                             <button onClick={handleSignin}>Sign In</button>
                             <div className={styles.forms1}>
                                 <div>
